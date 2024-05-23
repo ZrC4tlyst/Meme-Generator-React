@@ -1,0 +1,25 @@
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.45em;
+  margin-left: 25px;
+}
+
+section img {
+  height: 60px;
+  width: auto;
+}
+
+h3 {
+  margin-right: 25px;
+}
