@@ -29,6 +29,13 @@ button {
   border-radius: 5px;
   font-size: 1.3em;
   border: 0.9px solid rgb(209, 213, 219);
+  text-indent: 5px;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,6 +50,7 @@ button {
   }
   .inputs-container {
     gap: 10px;
+    margin-top: -40px;
   }
   .inputs-container input {
     height: 4vh;
@@ -51,5 +59,11 @@ button {
     font-size: 0.8em;
     border: 0.9px solid rgb(209, 213, 219);
     text-indent: 5px;
+  }
+  .image {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    margin-top: -40px;
   }
 }

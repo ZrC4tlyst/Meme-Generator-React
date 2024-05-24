@@ -29,6 +29,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
   }
   section {
     font-size: 1.5vh;

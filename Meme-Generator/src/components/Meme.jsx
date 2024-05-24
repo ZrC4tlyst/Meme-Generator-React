@@ -1,13 +1,17 @@
 import styles from "./Meme.module.css";
 import memesData from "../../memesData";
+import { useState } from "react";
 
 const Meme = () => {
-  function getMemeData() {
+  const [memeImage, setMemeImage] = useState("");
+
+  function getMemeImage() {
     let memesArray = memesData.data.memes;
     let randomMemeImg = Math.floor(Math.random() * memesArray.length);
     // eslint-disable-next-line no-unused-vars
     const url = memesArray[randomMemeImg].url;
-    console.log(url);
+    // eslint-disable-next-line no-unused-vars
+    setMemeImage((memeImage) => url);
   }
 
   return (
@@ -17,8 +21,9 @@ const Meme = () => {
           <input type="text" placeholder="Top text" />
           <input type="text" placeholder="Bottom text" />
         </div>
-        <button onClick={getMemeData}>Get new meme image 🎨</button>
+        <button onClick={getMemeImage}>Get new meme image 🎨</button>
       </div>
+          <img src={memeImage} alt="" className={styles.image } />
     </>
   );
 };
