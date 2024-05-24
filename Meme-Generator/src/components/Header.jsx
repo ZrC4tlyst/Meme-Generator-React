@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import styles from "./Header.module.css";
 import trollFace from "../assets/troll-face.png";
 
