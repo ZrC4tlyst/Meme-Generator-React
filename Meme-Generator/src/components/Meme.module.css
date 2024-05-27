@@ -32,10 +32,16 @@ button {
   text-indent: 5px;
 }
 
-.image {
-  display: block;
-  margin: auto;
-  max-width: 100%;
+.meme-container {
+  position: relative;
+}
+
+.meme-image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 600px;
 }
 
 @media screen and (max-width: 768px) {
@@ -60,10 +66,10 @@ button {
     border: 0.9px solid rgb(209, 213, 219);
     text-indent: 5px;
   }
-  .image {
-    display: block;
-    margin: 0 auto;
-    max-width: 90%;
-    margin-top: -40px;
+
+  .meme-image {
+    position: relative;
+    transform: translate(-50%, -10%);
+    width: 40vh;
   }
 }
